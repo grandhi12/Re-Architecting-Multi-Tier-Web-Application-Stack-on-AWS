@@ -1,1 +1,1 @@
-# Re-Architecting-Multi-Tier-Web-Application-Stack-on-AWS
+# Re-Architecting Multi-Tier Web Application Stack on AWS
