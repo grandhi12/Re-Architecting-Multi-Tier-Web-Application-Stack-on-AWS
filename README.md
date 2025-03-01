@@ -11,11 +11,17 @@ For the backend, the architecture includes Amazon MQ for messaging, Amazon Elast
 
 ### Steps Invloved
 • Create Key pair for beanstalk instance login
+
 • Create Security Group for Elasticcache, RDS & ActiveMQ
+
 • Create RDS, AmazonElastic Cache and Mazon MQ
+
 • Create Elastic Beanstalk Environment
+
 • Update SG of backend to allow traffic from Bean SG
+
 • Update SG of backend to allow internal traffic
+
 • Launch Ec2-Instance for DB Initializing
 • Login to the instance and Inititialize RDS DB
 • Change healthcheck on beanstalk to /login
