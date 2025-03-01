@@ -4,6 +4,7 @@ This project involved migrating a multi-tier web application stack to AWS by boo
 
 ### Architecture
 ![WhatsApp Image 2025-02-28 at 19 33 32](https://github.com/user-attachments/assets/712f14c1-d511-44ff-8074-2b755bd7432c)
+
 When a user accesses the URL, it resolves to an endpoint managed by Amazon Route 53. This endpoint directs the request to Amazon CloudFront, which then forwards it to an Application Load Balancer (ALB). The ALB distributes traffic across an Auto Scaling Group running a Tomcat application within AWS Elastic Beanstalk. Amazon CloudWatch continuously monitors the Auto Scaling Group, ensuring EC2 instances scale as needed. Application artifacts are stored in an Amazon S3 bucket.
 
 For the backend, the architecture includes Amazon MQ for messaging, Amazon ElastiCache for caching, and Amazon RDS for database management.
