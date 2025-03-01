@@ -23,11 +23,19 @@ For the backend, the architecture includes Amazon MQ for messaging, Amazon Elast
 • Update SG of backend to allow internal traffic
 
 • Launch Ec2-Instance for DB Initializing
+
 • Login to the instance and Inititialize RDS DB
+
 • Change healthcheck on beanstalk to /login
+
 • Add 443 https Listner to ELB
+
 • Build Artifact whith Backend Information
+
 • Deploy Artifact to Beanstalk
+
 • Create CDN with SSL certificate
+
 • Update Entry in GoDaddy DNS Zones
+
 • Test the URL
